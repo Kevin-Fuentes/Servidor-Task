@@ -29,7 +29,7 @@ app.use(cors())
 app.use(express.json({extended:true}))
 
 //PUERTO DE NUESTRO SERVIDOR
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 
 //RUTAS
 app.use('/api/usuarios',require('./router/usuarios'))
